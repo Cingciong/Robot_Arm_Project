@@ -13,7 +13,7 @@
 \usepackage{lastpage}
 \hypersetup{hidelinks} % Hide the link borders
 \usepackage{geometry} 
-\geometry{a4paper, margin=2cm} % Margins for A4 paper
+\geometry{a4paper, margin=2.5cm} % Margins for A4 paper
 \usepackage{setspace}
 \setstretch{1.05} % Line spacing
 \setlength{\parindent}{0pt} % No paragraph indentation
@@ -73,12 +73,15 @@
 \end{titlepage}
 
 
-\section*{Abstract}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\
-
-The goal of this project thesis is to design, construct and validate a functional, programmable prototype of a small-scale precise anthropomorphic manipulator. Designed to feature an automatically calibrating and interchangeable end-effector.
-
-
+\section*{Abstract} % TODO: refine the abstract, this is just a placeholder
+This thesis details the design, construction, and validation of a programmable, small-scale anthropomorphic manipulator. The system is engineered for a 500 mm reach and a 1 kg maximum payload, featuring a 5-axis kinematic structure with an automatically calibrating, interchangeable end-effector. The mechanical assembly utilizes a hybrid construction of custom 3D-printed components with reinforced brass inserts, precision-cut aluminum sheets, and V-slot profiles.
+\smallskip\par
+To ensure precision and safety, the manipulator employs five NEMA17 stepper motors integrated into a closed-loop control system via rotary encoders. A key technical contribution is the implementation of active collision detection with adjustable force thresholds, facilitating safe interaction between the robot and its environment.
+\smallskip\par
+The control architecture is powered by an ESP32 dual-core microcontroller running custom firmware, which interfaces with a dedicated Python API over Wi-Fi or Ethernet. Supporting hardware includes a custom PCB for power distribution and sensor integration. The final prototype demonstrates a modular approach to robotics, providing a scalable platform for precise manipulation and future iterative upgrades.
+\smallskip\par
+\begin{flushright}\textit{Authored by Mikołaj Kuryło}\end{flushright}
+\addcontentsline{toc}{section}{Abstract}
 \newpage
 
 
@@ -86,8 +89,6 @@ The goal of this project thesis is to design, construct and validate a functiona
 \tableofcontents
 \newpage
 
-
-\section{Introduction}
 
 
 \end{document}
