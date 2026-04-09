@@ -1,3 +1,6 @@
 # Output from compiling .tex
-*.pdf
-*.synctex.gz
+docs/**/*.synctex.gz
+docs/**/*.aux
+docs/**/*_minted*
+docs/**/*.log
+docs/**/*.bbl
