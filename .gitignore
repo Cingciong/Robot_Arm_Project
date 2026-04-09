@@ -1,0 +1,3 @@
+# Output from compiling .tex
+*.pdf
+*.synctex.gz
